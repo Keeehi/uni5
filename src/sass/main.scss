@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'KelsonSans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('KelsonSans Light'), local('KelsonSans-Light'), local('Kelson Sans Light'), local('Kelson-Sans-Light'), url('../fonts/KelsonSans/KelsonSans-Light.woff2') format('woff2'), url('../fonts/KelsonSans/KelsonSans-Light.ttf') format('truetype'), url('../fonts/KelsonSans/KelsonSans-Light.eot?#iefix') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'KelsonSans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('KelsonSans Regular'), local('KelsonSans-Regular'), local('Kelson Sans Regular'), local('Kelson-Sans-Regular'), url('../fonts/KelsonSans/KelsonSans-Regular.woff2') format('woff2'), url('../fonts/KelsonSans/KelsonSans-Regular.ttf') format('truetype'), url('../fonts/KelsonSans/KelsonSans-Regular.eot?#iefix') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'KelsonSans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('KelsonSans Bold'), local('KelsonSans-Bold'), local('Kelson Sans Bold'), local('Kelson-Sans-Bold'), url('../fonts/KelsonSans/KelsonSans-Bold.woff2') format('woff2'), url('../fonts/KelsonSans/KelsonSans-Bold.ttf') format('truetype'), url('../fonts/KelsonSans/KelsonSans-Bold.eot?#iefix') format('embedded-opentype');
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: KelsonSans, sans-serif;
+}
+
+.page {
+    min-height: 100%;
+}
+
+.vertical-center-outer {
+    display: table;
+    height: 100%;
+    overflow: hidden;
+    color: #2e2e2e;
+}
+
+.vertical-center-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#firstPage {
+    width: 100%;
+    background: #00aeef url("../img/bg.png") repeat-x bottom center;
+
+    >* {
+        width: 100%;
+        background: url("../img/clouds.png") repeat-x top center;
+        text-align: center;
+        color: #ffffff;
+    }
+}
+
+#logo {
+    width: 25%;
+}
+
+h1 {
+    font-size: 300%;
+}
+
+#members-button {
+    background-color: #2e3192;
+    display: block;
+    text-decoration: none;
+    padding: 0.4em 0 0;
+    color: #ffffff;
+    width: 10em;
+    font-size: 150%;
+    font-weight: bold;
+    margin: 0 auto;
+    border-radius: 0.25em;
+
+    svg {
+        width: 1em;
+        height: 1em;
+        fill: #ffffff;
+        overflow: hidden;
+    }
+
+    &:hover {
+        background-color: white;
+        color: #2e3192;
+
+        svg {
+            fill: #2e3192;
+        }
+    }
+}
+
+#members {
+    background-color: #2e3192;
+    overflow: hidden;
+
+    >div {
+        overflow: hidden;
+        margin: 2% 2%;
+        width: 40%;
+        padding: 1%;
+        background-color: #e9e9ff;
+        text-align: center;
+        border-radius: 1em ;
+        float: left;
+
+        img {
+            height: 8em;
+        }
+
+        &:hover {
+            background-color: #ffffff;
+        }
+    }
+}
